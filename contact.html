@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Diana Karolina Burgos Parra" />
+		<meta name="viewport" content="width,initial-scale=1.0" /> 
+		<link rel="stylesheet" href="css/styles.css"/>
+		<title>Project 1: Brand Website - Home</title>
+	</head>
+
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html"> 
+                        <img class="logo-img" src="images/logo.png" alt="company logo" width="160px" height="60px">     
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html"><h2>About us</h2></a>
+                    <ul class="submenu">
+                        <li><a href="about.html"><h3>History</h3></a></li>
+                        <li><a href="about.html#about-team"><h3>Team</h3></a></li>
+                    </ul>
+                    
+                </li>
+                <li>
+                    <a href="store.html"><h2>Store</h2></a>
+                </li>
+                <li>
+                    <a href="gallery.html"><h2>Photo Gallery</h2></a>
+                </li>
+                <li>
+                    <a href="contact.html"><h2>Contact</h2></a>
+                </li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <section class="main-content">
+            <h2>Contact us!</h2>
+
+            <form action="http://vip.groupehn.com:20003/html/infospost.php" method="POST" >
+                <fieldset>
+                
+                    <legend>Contact details</legend>
+
+                    <div>
+                        <label>Last Name
+                            <input id="lastname" type="text" name="lastname" required/>
+                        </label>
+                        
+                        <label>First Name
+                            <input id="firstname" type="text" name="firstname" required/>
+                        </label>
+                    </div>
+
+                    <label>Email
+                        <input id="mail" type="email" name="mail" placeholder="yourmail@yahoo.com" required/>
+                    </label>
+
+                    <div class="row-form">
+                        <div class="text-area">
+                            <p>Share your questions or comments with us.</p>
+                            <textarea name="request" id="request" required cols="66" rows="9"></textarea>
+                        </div>
+
+                        <label>Country
+                            <select name="country" id="country">
+                                <option>Spain</option>
+                                <option>Portugal</option>
+                                <option>France</option>
+                                <option>Germany</option>
+                                <option>Italy</option>
+                                <option >Ireland</option>
+                            </select>
+                        </label>
+
+                    </div>
+                    
+                </fieldset>
+
+                <div class="buttons">
+                    <input class="button" type="reset" value="RESET" />
+                    <input class="button" type="submit" value="SUBMIT" />
+                </div>
+            </form>
+
+            
+        </section>
+        <p class="contact-info">Phone: +34 600600600 | Address: 123 Main Street | LinkedIn: DelicakeStore | Twitter: @delicakestore</p>
+
+
+        <hr>
+    </body>
+	
+</html> 
